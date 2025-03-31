@@ -72,20 +72,133 @@ We extract structured info like:
 
 ```json
 {
-  "programID": 123,
+  "id": "67eaa3307f4b4aeacca94b62",
+  "programID": 11757,
   "programName": "Dupixent MyWay Copay Card",
-  "drugs": ["Dupixent"],
-  "indications": [{
-    "description": "Asthma",
-    "icd10Code": "J45",
-    "icd10Description": "Asthma",
-    "mappingSource": "ai"
-  }],
-  "requirements": [{ "name": "age", "value": "18+" }],
-  "benefits": [{ "name": "max_annual_savings", "value": "13000.00" }],
-  "expirationDate": "2025-12-31",
-  "programUrl": "http://example.com",
-  "details": [{ "program": "...$0 copay..." }]
+  "drugs": [
+    "Dupixent",
+    "Dupixent Pen"
+  ],
+  "programType": null,
+  "requirements": [
+    {
+      "name": "us_residency",
+      "value": "true"
+    },
+    {
+      "name": "insurance_coverage",
+      "value": "true"
+    }
+  ],
+  "benefits": [
+    {
+      "name": "max_annual_savings",
+      "value": "13000.00"
+    },
+    {
+      "name": "income_requirements",
+      "value": "none"
+    },
+    {
+      "name": "valid_pharmacies",
+      "value": "participating"
+    },
+    {
+      "name": "activation_required",
+      "value": "no"
+    }
+  ],
+  "forms": null,
+  "funding": null,
+  "details": [
+    {
+      "eligibility": "No income requirements"
+    },
+    {
+      "program": "Covers up to $13,000 annually in copay assistance"
+    },
+    {
+      "renewal": "Valid at participating pharmacies only"
+    }
+  ],
+  "programUrl": "https://www.dupixent.com/myway",
+  "indications": [
+    {
+      "description": "Moderate-to-severe atopic dermatitis",
+      "icd10Code": "L20.9",
+      "icd10Description": "Atopic dermatitis, unspecified",
+      "mappingSource": "ai"
+    },
+    {
+      "description": "Asthma",
+      "icd10Code": "J45.909",
+      "icd10Description": "Asthma, unspecified, uncomplicated",
+      "mappingSource": "ai"
+    },
+    {
+      "description": "Eosinophilic esophagitis",
+      "icd10Code": null,
+      "icd10Description": null,
+      "mappingSource": "unmappable"
+    }
+  ],
+  "associatedFoundations": [
+    {
+      "programID": 30683,
+      "programName": "Accessia Health: Alpha-1 Antitrypsin Deficiency - Private Insurance: Waitlist",
+      "foundationFundLevels": [
+        "Empty"
+      ],
+      "therapAreas": [
+        "Alpha-1 Antitrypsin Deficiency"
+      ],
+      "drugs": [
+        "Glassia",
+        "Prolastin-C",
+        "Zemaira",
+        "Aralast NP"
+      ],
+      "indications": [
+        {
+          "description": "Alpha-1 Antitrypsin Deficiency",
+          "icd10Code": "E88.0",
+          "icd10Description": "Alpha-1-antitrypsin deficiency",
+          "mappingSource": "ai"
+        }
+      ]
+    },
+    {
+      "programID": 30778,
+      "programName": "Accessia Health: Asthma - Public Insurance: Waitlist",
+      "foundationFundLevels": [
+        "Empty"
+      ],
+      "therapAreas": [
+        "Asthma",
+        "Severe Asthma"
+      ],
+      "drugs": [
+        "Fasenra",
+        "Xolair",
+        "Dupixent"
+      ],
+      "indications": [
+        {
+          "description": "Asthma",
+          "icd10Code": "J45.909",
+          "icd10Description": "Asthma, unspecified, uncomplicated",
+          "mappingSource": "ai"
+        },
+        {
+          "description": "Severe Asthma",
+          "icd10Code": "J45.50",
+          "icd10Description": "Severe persistent asthma, uncomplicated",
+          "mappingSource": "ai"
+        }
+      ]
+    }
+  ],
+  "expirationDate": null
 }
 ```
 
@@ -101,7 +214,7 @@ Visit: [http://localhost:8080/swagger/index.html](http://localhost:8080/swagger/
 
 1. `POST /auth/register`
 2. `POST /auth/login`
-3. Copy JWT → Use **Authorize** in Swagger: `Bearer eyJ...`
+3. Copy JWT → Use **Authorize** in Swagger: `eyJksjd83jfhfhf...` (without word 'Bearer', you only need to paste the token)
 
 ## 🧪 Testing
 
@@ -116,6 +229,12 @@ dotnet test
 "Jwt": { "Key": "...", "Issuer": "DrugApi", "Audience": "DrugUsers" },
 "Mongo": { "ConnectionString": "mongodb://mongo:27017", "Database": "DrugDb" }
 ```
+
+## ⚙️ Execution
+
+- Download the repository.
+- Run the project with: docker-compose up --build
+- Go to http://localhost:8080/swagger/index.html
 
 ## 📈 Scalability
 
