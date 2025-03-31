@@ -233,6 +233,7 @@ dotnet test
 ## ⚙️ Execution
 
 - Download the repository.
+- Update API_KEY in appsettings.json and appsettings.Development.json.
 - Run the project with: docker-compose up --build
 - Go to http://localhost:8080/swagger/index.html
 
