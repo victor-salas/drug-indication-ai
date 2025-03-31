@@ -1,0 +1,54 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugIndication.API", "DrugIndication.API\DrugIndication.API.csproj", "{78A7AB24-FEDD-4A8F-BD9D-EEFCDFCF2DED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugIndication.Domain", "DrugIndication.Domain\DrugIndication.Domain.csproj", "{5AE7A923-F47B-47D2-AFFE-7F37097921EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugIndication.Application", "DrugIndication.Application\DrugIndication.Application.csproj", "{6364EA66-3EB0-48F6-A66C-78795A8515F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugIndication.Infrastructure", "DrugIndication.Infrastructure\DrugIndication.Infrastructure.csproj", "{DD1FC335-934A-4192-9190-C7844C82F7FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugIndication.Parsing", "DrugIndication.Parsing\DrugIndication.Parsing.csproj", "{8FF196C8-DF4B-472F-9F70-C11862792A4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugIndication.Tests", "DrugIndication.Tests\DrugIndication.Tests.csproj", "{BD20A46C-1107-E33B-AC31-61476137CEFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78A7AB24-FEDD-4A8F-BD9D-EEFCDFCF2DED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A7AB24-FEDD-4A8F-BD9D-EEFCDFCF2DED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A7AB24-FEDD-4A8F-BD9D-EEFCDFCF2DED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A7AB24-FEDD-4A8F-BD9D-EEFCDFCF2DED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE7A923-F47B-47D2-AFFE-7F37097921EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE7A923-F47B-47D2-AFFE-7F37097921EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE7A923-F47B-47D2-AFFE-7F37097921EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE7A923-F47B-47D2-AFFE-7F37097921EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6364EA66-3EB0-48F6-A66C-78795A8515F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6364EA66-3EB0-48F6-A66C-78795A8515F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6364EA66-3EB0-48F6-A66C-78795A8515F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6364EA66-3EB0-48F6-A66C-78795A8515F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD1FC335-934A-4192-9190-C7844C82F7FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD1FC335-934A-4192-9190-C7844C82F7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD1FC335-934A-4192-9190-C7844C82F7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD1FC335-934A-4192-9190-C7844C82F7FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FF196C8-DF4B-472F-9F70-C11862792A4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FF196C8-DF4B-472F-9F70-C11862792A4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FF196C8-DF4B-472F-9F70-C11862792A4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FF196C8-DF4B-472F-9F70-C11862792A4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD20A46C-1107-E33B-AC31-61476137CEFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD20A46C-1107-E33B-AC31-61476137CEFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD20A46C-1107-E33B-AC31-61476137CEFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD20A46C-1107-E33B-AC31-61476137CEFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D3A3109-A027-4E6F-8AC0-287445237472}
+	EndGlobalSection
+EndGlobal
