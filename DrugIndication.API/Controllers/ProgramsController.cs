@@ -4,7 +4,6 @@ using DrugIndication.Infrastructure;
 using DrugIndication.Parsing.Transformers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
 
 namespace DrugIndication.API.Controllers
 {

@@ -19,9 +19,4 @@
     <ProjectReference Include="..\DrugIndication.Parsing\DrugIndication.Parsing.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Configurations\" />
-    <Folder Include="Middlewares\" />
-  </ItemGroup>
-
 </Project>

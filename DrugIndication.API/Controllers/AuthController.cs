@@ -3,7 +3,6 @@ using DrugIndication.Domain.DTO;
 using DrugIndication.Domain.Entities;
 using DrugIndication.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
-using BCrypt.Net;
 
 namespace DrugIndication.API.Controllers
 {
